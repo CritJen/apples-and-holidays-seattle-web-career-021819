@@ -50,6 +50,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holiday|
     best_holidays << holiday.select{|name, supplies| supplies.include?("BBQ")}
     end
+    return best_holidays
   end
 
   # return an array of holiday names (as symbols) where supply lists
