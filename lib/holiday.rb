@@ -46,11 +46,9 @@ end
   # etc.
 
 def all_holidays_with_bbq(holiday_hash)
+  best_holidays = []
   holiday_hash.each do |season, holiday|
-    holiday.select!{|name, supplies| supplies.include?("BBQ")}
-    if season.empty?
-      return holiday
-    end
+    best holidays << holiday.select!{|name, supplies| supplies.include?("BBQ")}
     end
   end
 
