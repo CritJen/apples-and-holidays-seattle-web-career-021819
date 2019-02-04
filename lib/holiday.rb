@@ -49,8 +49,8 @@ def all_holidays_with_bbq(holiday_hash)
   best_holidays = {}
   holiday_hash.each do |season, holiday|
     best_holidays.merge(holiday.select{|name, supplies| supplies.include?("BBQ")})
-    binding.pry
     end
+    binding.pry
     return best_holidays.keys
   end
 
