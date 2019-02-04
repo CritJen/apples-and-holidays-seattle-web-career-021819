@@ -53,6 +53,7 @@ def all_holidays_with_bbq(holiday_hash)
         answers << name
     end
   end
+  return answers
 end
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
